@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="baidu-site-verification" content="ZEXvy8Xkma" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mall</title>
+    <script>
+        void function(g,f,j,c,h,d,b){g.alogObjectName=h,g[h]=g[h]||function(){(g[h].q=g[h].q||[]).push(arguments)},g[h].l=g[h].l||+new Date,d=f.createElement(j),d.async=!0,d.src=c,b=f.getElementsByTagName(j)[0],b.parentNode.insertBefore(d,b)}(window,document,"script","http://img.baidu.com/hunter/alog/alog.min.js","alog");void function(){function c(){return;}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date);alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:c,tti:c,page_ready:c}}();void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+    </script>
+
+
+
+    <script src="/tp5_1/public/static/index/js/core.js"></script>
+
+    <script>
+        require.config({
+            'waitSeconds': 30,
+            'baseUrl': 'http://mallcdn.baidu.com/static/2016033051016/js',
+            'packages': [
+                {
+                    'name': 'echarts',
+                    'location': '../dep/echarts/2.2.7/src',
+                    'main': 'echarts'
+                },
+                {
+                    'name': 'zrender',
+                    'location': '../dep/zrender/2.1.1/src',
+                    'main': 'zrender'
+                }
+            ]
+        });
+    </script>
+
+    <link rel="stylesheet" href="/tp5_1/public/static/index/css/style.css">
+
+    <script>
+        var cr = Math.floor(Math.random() * 99999);
+        var activityId = '';
+        var pageId = '1' ? '1' : 0;
+        var rtTag = $.stringifyJSON({
+                "ecom_page": {
+                    "page_type": "home"
+                }
+            }
+        );
+
+        // if (location.href.indexOf('mall.baidu.com') !== -1) {
+        var _hmt = _hmt || [];
+        var siteId = 'd64af1f3b8e241d56f0536501d4bfdd6';
+        _hmt.push(['_setAccount', siteId]);
+        _hmt.push(['_setAutoPageview', false]);
+
+        if (rtTag) {
+            _hmt.push(['_trackRTEvent', {
+                data: $.parseJSON(rtTag)
+            }]);
+        }
+
+        trackPageViewTJ(siteId, '1', '');
+        if ('' !== '') {
+            require(['common/md5'], function (md5) {
+                var merchantSiteId = md5('');
+                _hmt.push(['_setAccount', merchantSiteId]);
+                _hmt.push(['_setAutoPageview', true]);
+                deployBaiduTJ(merchantSiteId);
+            });
+            // }
+        }
+
+    </script>
+</head>
+<script>
+    alog('speed.set', 'ht', +new Date);
+</script>
+<body>
+<script>
+    var GLOBAL_CONF = {"debug":false,"passport":{"host":"passport.baidu.com","tpl":"bdmall"},"site":{"siteId":7202944,"ucId":10914574}};
+</script>
+
+<div class="home-container">
+
+    <div id="common-header" class="normal-header0">
+        <div class="mini-header-search">
+            <div class="container">
+                <div class="user-info">
+                    <a href="/" target="_self" data-position-id="1000002">欢迎光临MALL</a><span class="separate">|</span>
+                    <span class="common-login-info">
+                <a href="javascript:;" class="J_loginBtn" data-position-id="1000007">请登录</a><span class="separate">|</span>
+                <a href="javascript:;" class="J_regBtn" data-position-id="1000008">免费注册</a><span class="separate">|</span>
+                </span>
+                    <a href="/home" target="_blank" data-position-id="1000005">个人中心</a><span class="separate">|</span>
+                    <a href="/home/order/list" target="_blank" data-position-id="1000043">我的订单</a><span class="separate">|</span>
+                    <a href="/cart/list" target="_blank" data-position-id="1000006"><i class="bag-icon f-icon"></i>购物车（<span class="num">0</span>）</a>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+
+
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="搜索你想要的" value="">
+                <button class="search-btn">搜索</button>
+                <ul class="search-suggest">
+                </ul>
+            </div>
+
+            <dl class="widget-service-guarantee">
+                <dd>
+                    <i class="icon-guarantee22"></i>
+                    <p>正品保障</p>
+                </dd>
+                <dd>
+                    <i class="icon-certified"></i>
+                    <p>品牌验真</p>
+                </dd>
+                <dd>
+                    <i class="icon-compensation"></i>
+                    <p>假一赔五</p>
+                </dd>
+            </dl>
+        </div>
